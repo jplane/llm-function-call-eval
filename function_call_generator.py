@@ -1,8 +1,6 @@
-import os
 import json
 from azure.ai.projects import AIProjectClient
 from azure.identity import DefaultAzureCredential
-#from azure.storage.blob import BlobClient
 
 class FunctionCallGenerator:
     
@@ -11,14 +9,6 @@ class FunctionCallGenerator:
         self.model_config = model_config
 
     def __call__(self, intent: str):
-
-        # cred = DefaultAzureCredential()
-
-        # blob_client = BlobClient.from_blob_url(
-        #     self.model_config["SWAGGER_PATH"], credential=cred
-        # )
-        # swagger_blob = blob_client.download_blob().readall()
-        # swagger_spec = json.loads(swagger_blob)
 
         with open(self.model_config["SWAGGER_PATH"], 'r') as swagger_file:
             swagger_spec = json.load(swagger_file)
