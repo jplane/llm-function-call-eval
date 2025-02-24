@@ -1,0 +1,20 @@
+turn on the lights in the living room
+set the thermostat to 68 degrees F
+set the lights in the kitchen to 50%
+turn off the alarm system
+raise garage door #2
+turn off the lights in the bedroom
+set the thermostat to 72 degrees C
+set the lights in the bathroom to 75%
+turn on the alarm system
+lower garage door #1
+turn on the lights in the garage
+set the thermostat to 65 degrees F
+set the lights in the office to 30%
+turn off the lights in the dining room
+raise garage door #3
+turn on the lights in the hallway
+set the thermostat to 70 degrees F
+set the lights in the basement to 20%
+turn off the alarm system
+lower garage door #4

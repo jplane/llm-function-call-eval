@@ -1,0 +1,20 @@
+{"intent": "turn on the lights in the living room", "expected_calls": [{"function": "controlRoomLights", "args": {"room": "living room", "state": "on"}}]}
+{"intent": "set the thermostat to 68 degrees F", "expected_calls": [{"function": "setThermostat", "args": {"temp": 68, "unit": "F"}}]}
+{"intent": "set the lights in the kitchen to 50%", "expected_calls": [{"function": "setRoomLights", "args": {"room": "kitchen", "level": 50}}]}
+{"intent": "turn off the alarm system", "expected_calls": [{"function": "controlAlarmSystem", "args": {"state": "off"}}]}
+{"intent": "raise garage door #2", "expected_calls": [{"function": "controlGarageDoor", "args": {"id": 2, "state": "up"}}]}
+{"intent": "turn off the lights in the bedroom", "expected_calls": [{"function": "controlRoomLights", "args": {"room": "bedroom", "state": "off"}}]}
+{"intent": "set the thermostat to 72 degrees C", "expected_calls": [{"function": "setThermostat", "args": {"temp": 72, "unit": "C"}}]}
+{"intent": "set the lights in the bathroom to 75%", "expected_calls": [{"function": "setRoomLights", "args": {"room": "bathroom", "level": 75}}]}
+{"intent": "turn on the alarm system", "expected_calls": [{"function": "controlAlarmSystem", "args": {"state": "on"}}]}
+{"intent": "lower garage door #1", "expected_calls": [{"function": "controlGarageDoor", "args": {"id": 1, "state": "down"}}]}
+{"intent": "turn on the lights in the garage", "expected_calls": [{"function": "controlRoomLights", "args": {"room": "garage", "state": "on"}}]}
+{"intent": "set the thermostat to 65 degrees F", "expected_calls": [{"function": "setThermostat", "args": {"temp": 65, "unit": "F"}}]}
+{"intent": "set the lights in the office to 30%", "expected_calls": [{"function": "setRoomLights", "args": {"room": "office", "level": 30}}]}
+{"intent": "turn off the lights in the dining room", "expected_calls": [{"function": "controlRoomLights", "args": {"room": "dining room", "state": "off"}}]}
+{"intent": "raise garage door #3", "expected_calls": [{"function": "controlGarageDoor", "args": {"id": 3, "state": "up"}}]}
+{"intent": "turn on the lights in the hallway", "expected_calls": [{"function": "controlRoomLights", "args": {"room": "hallway", "state": "on"}}]}
+{"intent": "set the thermostat to 70 degrees F", "expected_calls": [{"function": "setThermostat", "args": {"temp": 70, "unit": "F"}}]}
+{"intent": "set the lights in the basement to 20%", "expected_calls": [{"function": "setRoomLights", "args": {"room": "basement", "level": 20}}]}
+{"intent": "turn off the alarm system", "expected_calls": [{"function": "controlAlarmSystem", "args": {"state": "off"}}]}
+{"intent": "lower garage door #4", "expected_calls": [{"function": "controlGarageDoor", "args": {"id": 4, "state": "down"}}]}

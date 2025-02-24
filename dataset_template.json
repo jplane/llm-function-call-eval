@@ -1,0 +1,12 @@
+{
+    "intent": "do a thing",
+    "expected_calls": [
+        {
+            "function": "function1",
+            "args": {
+                "arg1": "value1",
+                "arg2": "value2"
+            }
+        }
+    ]    
+}

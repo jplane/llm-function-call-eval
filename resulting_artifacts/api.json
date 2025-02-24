@@ -1,0 +1,151 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Home Automation API",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/lights/{room}/{state}": {
+      "put": {
+        "summary": "Control the lights in a specified room",
+        "operationId": "controlRoomLights",
+        "parameters": [
+          {
+            "name": "room",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "state",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "enum": ["on", "off"]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Lights controlled successfully"
+          }
+        }
+      }
+    },
+    "/thermostat/{temp}/{unit}": {
+      "put": {
+        "summary": "Set the thermostat",
+        "operationId": "setThermostat",
+        "parameters": [
+          {
+            "name": "temp",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "name": "unit",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "example": "F"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Thermostat set successfully"
+          }
+        }
+      }
+    },
+    "/lights/{room}/level/{level}": {
+      "put": {
+        "summary": "Set the lights in a specified room to a specific level",
+        "operationId": "setRoomLights",
+        "parameters": [
+          {
+            "name": "room",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "level",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "example": 50
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Room lights set successfully"
+          }
+        }
+      }
+    },
+    "/alarm-system/{state}": {
+      "put": {
+        "summary": "Control the alarm system",
+        "operationId": "controlAlarmSystem",
+        "parameters": [
+          {
+            "name": "state",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "enum": ["on", "off"]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Alarm system controlled successfully"
+          }
+        }
+      }
+    },
+    "/garage-door/{id}/{state}": {
+      "put": {
+        "summary": "Control the garage door",
+        "operationId": "controlGarageDoor",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer"
+            }
+          },
+          {
+            "name": "state",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "enum": ["up", "down"]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Garage door controlled successfully"
+          }
+        }
+      }
+    }
+  }
+}
